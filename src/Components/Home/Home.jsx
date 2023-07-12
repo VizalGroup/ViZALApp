@@ -6,7 +6,7 @@ import style from '../../Components/Home/Home.module.css'
 export default function Home() {
   return (
     <div className={style.container}>
-   
+   <button className={style.button}>Contactanos</button>
     </div>
   );
 }

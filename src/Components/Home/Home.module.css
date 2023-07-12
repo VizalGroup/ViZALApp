@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300&display=swap');
+
 .container {
   background-image: url(../Img/portatil.jpg);
   background-repeat: no-repeat;
@@ -8,19 +10,24 @@
 
 }
 
+.button{
+  margin-left: 20vw;
+  margin-top: 25vw;
+  border:none;
+  height: 4vw;
+  width: 8vw;
+  border-radius: 0.8vw;
+  font-family: 'Ysabeau SC', sans-serif;
+  color:whitesmoke;
+  font-size: 2.5vh;
+  background-color: rgb(24, 23, 23);
 
+}
+
+.button:hover{
+  color: rgb(48, 47, 47);
+  background-color: whitesmoke;
+}
   
-  /* Estilos para pantallas más pequeñas */
-  @media screen and (max-width: 768px) {
-    .container {
-      background-size: contain;
-    }
-  }
-  
-  /* Estilos para pantallas aún más pequeñas */
-  @media screen and (max-width: 480px) {
-    .container {
-      background-size: auto;
-    }
-  }
+
   
