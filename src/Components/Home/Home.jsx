@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <div className={style.container}>
    <button className={style.button}>Contactanos</button>
-   
+  <p className={style.texto}> soy un testo soy un testosoy un testosoy un testosoy un testosoy un testosoy un testosoy un testosoy un testosoy un testo</p>
+     
+    
   
    
    <footer className={style.footer}>
