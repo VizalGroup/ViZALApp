@@ -1,11 +1,10 @@
 import React from 'react'
+import Description from '../Description/Description'
 
-function Home() {
+export default function Home() {
   return (
     <div>
-      soy home
+      <Description/>
     </div>
   )
 }
-
-export default Home
