@@ -1,0 +1,19 @@
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(53, 52, 52, 0.014);
+    height: 7vw;
+  }
+  
+  .nav:hover{
+    background-color: rgba(43, 42, 42, 0.301);
+  }
+
+  .img{
+    width: 15vw;
+    margin-left: 2vw;
+    margin-top: 1vw;
+  }

@@ -1,0 +1,26 @@
+.container {
+  background-image: url(../Img/portatil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+
+}
+
+
+  
+  /* Estilos para pantallas más pequeñas */
+  @media screen and (max-width: 768px) {
+    .container {
+      background-size: contain;
+    }
+  }
+  
+  /* Estilos para pantallas aún más pequeñas */
+  @media screen and (max-width: 480px) {
+    .container {
+      background-size: auto;
+    }
+  }
+  
