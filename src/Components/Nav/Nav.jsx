@@ -7,6 +7,7 @@ function Nav() {
   return (
     <div  className={style.nav}>
     <img src={logo} alt='logo' className={style.img}/>
+    
     </div>
   )
 }
