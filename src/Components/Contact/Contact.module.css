@@ -1,0 +1,9 @@
+.container {
+  margin-top: 20vh;
+}
+
+.formGroup{
+    border: red solid 1px;
+    border-top: 3vh;
+    border-bottom: 3vh;
+}
