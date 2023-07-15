@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300&display=swap');
+
 .nav {
     position: absolute;
     top: 0;
@@ -17,3 +19,21 @@
     margin-left: 2vw;
     margin-top: 1vw;
   }
+
+  .somos{
+    border: none;
+    height: 2vw;
+    border-radius: 0.5vw;
+    margin-left: 25vw;
+    font-family: 'Ysabeau SC', sans-serif;
+    font-size: 1.4vw;
+   background-color: inherit;
+    color: rgb(248, 247, 247);
+  
+  }
+  
+  .somos:hover{
+    color: whitesmoke;
+    background-color: rgba(34, 33, 33, 0.836);
+    border: none;
+}

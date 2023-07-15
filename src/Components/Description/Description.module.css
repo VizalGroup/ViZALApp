@@ -1,6 +1,7 @@
 .text {
   font-size: 1.2vw;
   text-align: justify;
+  color: whitesmoke;
 }
 
 .container {
@@ -11,8 +12,14 @@
   margin-top: 15vh;
   margin-left: 15vw;
   margin-right: 15vw;
+  
 }
 
 .title {
   font-size: 2vw;
+  color:whitesmoke
+}
+
+body {
+  background-color: rgb(44, 43, 43);
 }
