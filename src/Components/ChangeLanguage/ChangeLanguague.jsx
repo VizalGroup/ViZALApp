@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./ChangeLanguague.module.css";
 
 export default function ChangeLanguage({ onLanguageChange }) {
+  // const [selectedOption] = useState("");
   const [selectedOption] = useState("");
 
   const handleLanguageChange = (event) => {
@@ -11,7 +12,7 @@ export default function ChangeLanguage({ onLanguageChange }) {
   };
 
   return (
-    <div>
+    <div className={style.container}>
       <select className={style.select} value={selectedOption} onChange={handleLanguageChange}>
         <option disabled value=""></option>
         <option value="es">Español</option>
