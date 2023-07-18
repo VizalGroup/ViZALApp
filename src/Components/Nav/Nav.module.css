@@ -7,7 +7,7 @@
     width: 100%;
     z-index: 9999;
     background-color: rgba(53, 52, 52, 0.014);
-    height: 7vw;
+    height: 10vh;
   }
   
   .nav:hover{
@@ -17,8 +17,11 @@
   .img{
     width: 15vw;
     margin-left: 2vw;
-    margin-top: 1vw;
+
+    margin-top: 1vh;
   }
+
+ 
 
   .somos{
     border: none;
