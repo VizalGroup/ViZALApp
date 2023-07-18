@@ -3,8 +3,8 @@
   margin-top: 10vh;
   border: none;
   border-radius: 100%;
-  background-color: transparent;
-  background-image: url('../Img/translating-icon.jpg');
+  background-color: rgb(255, 255, 255, 0.3);
+  background-image: url('../Img/trans.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

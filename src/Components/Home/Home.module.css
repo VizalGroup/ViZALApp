@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 .container {
   background-image: url(../Img/portatil.jpg);
@@ -7,43 +7,39 @@
   position: relative;
   min-height: calc(100vh - 50px);
   z-index: 0;
-
 }
 
-.button{
-  margin-left: 25vw;
+.button {
+  margin-left: 10vw;
   margin-top: 25vh;
-  border:none;
-  height: 44px;
-  width: 120px;
+  border: none;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
   border-radius: 0.8vw;
-  font-family: 'Ysabeau SC', sans-serif;
-  color:whitesmoke;
+  font-family: 'Comfortaa', cursive;
+  color: black;
   font-size: 2.5vh;
-  background-color: rgb(24, 23, 23);
-
+  background-color: transparent;
 }
 
-.button:hover{
-  color: rgb(48, 47, 47);
-  background-color: whitesmoke;
+.button:hover {
+  color: whitesmoke;
+  background-color: rgba(24, 23, 23, 0.3);
 }
 
-
-.whatsapp{
+.whatsapp {
   font-size: 4vh;
   color: whitesmoke;
   margin-left: 65vw;
 }
-  
 
-.face{
+.face {
   font-size: 4vh;
   color: whitesmoke;
   margin-left: 75vw;
   border-radius: 1vw;
 }
-
 
 .footer {
   position: fixed;
@@ -54,13 +50,11 @@
   background-color: #1f1e1e; /* Cambia el color de fondo según tus preferencias */
   text-align: center;
 
-  z-index: 1; 
+  z-index: 1;
 }
 
-.texto{
-width: 50vw;
-margin-left: 2vw;
-margin-top: -12vw;
+.texto {
+  width: 50vw;
+  margin-left: 2vw;
+  margin-top: -12vw;
 }
-
- 

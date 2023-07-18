@@ -118,12 +118,10 @@ export default function Description() {
 
 
   return (
-  
     <div className={style.container}>
       <ChangeLanguage onLanguageChange={handleLanguageChange} />
       <h2 className={style.title}>{titles[selectedLanguage]}</h2>
       <p className={style.text}>{displayText}</p>
     </div>
-   
   );
 }
