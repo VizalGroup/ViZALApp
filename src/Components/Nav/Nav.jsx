@@ -3,12 +3,11 @@ import style from '../Nav/Nav.module.css'
 import logo from '../Img/logo.png'
 import { Link } from 'react-router-dom'
 
-function Nav() {
-  const [selectedLanguage, setSelectedLanguage] = useState("es");
+function Nav({ selectedLanguage, onLanguageChange }) {
   const aboutUs = {
-    es: "Sobre Nosotros",
-    en: "About us",
-    fr: "Qui sommes-nous"
+    es: 'Sobre Nosotros',
+    en: 'About us',
+    fr: 'Qui sommes-nous'
   };
   return (
     <div  className={style.nav}>

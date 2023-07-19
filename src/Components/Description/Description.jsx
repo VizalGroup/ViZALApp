@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import style from "./Description.module.css";
-import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
+import React, { useState } from 'react';
+import style from './Description.module.css';
+import ChangeLanguage from '../ChangeLanguage/ChangeLanguague';
 
-export default function Description() {
+export default function Description({ selectedLanguage, onLanguageChange }) {
   const [showFullText, setShowFullText] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("es");
 
   const titles = {
-    es: "¡Bienvenido a ViZal Group!",
-    en: "Welcome to ViZalGroup!",
-    fr: "Bienvenue chez ViZal Group !"
+    es: '¡Bienvenido a ViZal Group!',
+    en: 'Welcome to ViZalGroup!',
+    fr: 'Bienvenue chez ViZal Group !'
   };
 
-
-  // Falta hacer una revision minuciosa de la traduccion inglesa y francesa, Ale 9/7/23
   const text = {
     es: (
       <>
@@ -111,11 +108,10 @@ export default function Description() {
   };
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
+    onLanguageChange(language);
   };
 
   const displayText = showFullText ? text[selectedLanguage] : text[selectedLanguage];
-
 
   return (
     <div className={style.container}>

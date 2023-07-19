@@ -4,53 +4,51 @@ import emailConfig from "./config";
 import style from "./Contact.module.css";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
 
-const Contact = () => {
+const Contact = ({ selectedLanguage, onLanguageChange }) => {
   const serviceId = emailConfig.REACT_APP_EMAILJS_SERVICE_ID;
   const templateId = emailConfig.REACT_APP_EMAILJS_TEMPLATE_ID;
   const userId = emailConfig.REACT_APP_EMAILJS_USER_ID;
   const form = useRef();
-  const [selectedLanguage, setSelectedLanguage] = useState("es");
 
   const ContactUs = {
-    es: "Contactanos",
-    en: "Contact us",
-    fr: "Contactez-nous"
+    es: 'Contactanos',
+    en: 'Contact us',
+    fr: 'Contactez-nous'
   };
 
   const Description = {
-    es: "Descripción de la propuesta",
-    en: "Proposal Description",
-    fr: "Description de la proposition"
+    es: 'Descripción de la propuesta',
+    en: 'Proposal Description',
+    fr: 'Description de la proposition'
   };
 
   const fullName = {
-    es: "Nombre completo o nombre de la empresa",
-    en: "Full name or company name",
-    fr: "Nom complet ou nom de l'entreprise"
+    es: 'Nombre completo o nombre de la empresa',
+    en: 'Full name or company name',
+    fr: 'Nom complet ou nom de l\'entreprise'
   };
 
   const tellUs = {
-    es: "Cuentanos que necesitas, ¿En que te podemos ayudar?",
-    en: "Tell us what you need, how can we help you?",
-    fr: "Dites-nous ce dont vous avez besoin, comment pouvons-nous vous aider ?"
+    es: 'Cuentanos que necesitas, ¿En que te podemos ayudar?',
+    en: 'Tell us what you need, how can we help you?',
+    fr: 'Dites-nous ce dont vous avez besoin, comment pouvons-nous vous aider ?'
   };
 
   const sendMessage = {
-    es: "Enviar",
-    en: "Send",
-    fr: "Envoyer"
+    es: 'Enviar',
+    en: 'Send',
+    fr: 'Envoyer'
   };
 
   const telNumber = {
-    es: "número de teléfono",
-    en: "telephone number",
-    fr: "numéro de téléphone"
+    es: 'número de teléfono',
+    en: 'telephone number',
+    fr: 'numéro de téléphone'
   };
-  
 
   useEffect(() => {
-    document.body.style.margin = "0";
-    document.body.style.padding = "0";
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
   }, []);
 
   const sendEmail = (e) => {
@@ -68,7 +66,7 @@ const Contact = () => {
   };
 
   const handleLanguageChange = (language) => {
-    setSelectedLanguage(language);
+    onLanguageChange(language);
   };
 
   return (
@@ -106,7 +104,9 @@ const Contact = () => {
               className={style.project}
               name="message"
             ></textarea>
-            <button className={style.button} type="submit">{sendMessage[selectedLanguage]}</button>
+            <button className={style.button} type="submit">
+              {sendMessage[selectedLanguage]}
+            </button>
           </form>
         </div>
       </div>
