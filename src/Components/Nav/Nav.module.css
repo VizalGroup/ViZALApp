@@ -1,41 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300&display=swap");
 
 .nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    background-color: rgba(53, 52, 52, 0.014);
-    height: 10vh;
-  }
-  
-  .nav:hover{
-    background-color: rgba(43, 42, 42, 0.301);
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: rgba(52, 52, 53, 0.3);
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
 
-  .img{
-    width: 15vw;
-    margin-left: 2vw;
-    margin-top: 1vh;
-  }
+.nav:hover {
+  background-color: rgba(43, 42, 42, 0.5);
+}
 
- 
+.img {
+  width: 15vw;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  
+}
 
-  .somos{
-    border: none;
-    height: 2vw;
-    border-radius: 0.5vw;
-    margin-left: 25vw;
-    font-family: 'Ysabeau SC', sans-serif;
-    font-size: 1.4vw;
-   background-color: inherit;
-    color: rgb(248, 247, 247);
-  
-  }
-  
-  .somos:hover{
-    color: whitesmoke;
-    background-color: rgba(34, 33, 33, 0.836);
-    border: none;
+.somos {
+  border: none;
+  border-radius: 0.5vw;
+  font-family: "Ysabeau SC", sans-serif;
+  font-size: 15px;
+  background-color: inherit;
+  color: rgb(255, 255, 255);
+  align-items: center;
+  margin-right: 3vw;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 0.8vw;
+  transition: 1s;
+}
+
+.somos:hover {
+  color: whitesmoke;
+  transform: scale(1.2);
+  border: none;
 }

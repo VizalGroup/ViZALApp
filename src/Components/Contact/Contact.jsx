@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import emailConfig from "./config";
 import style from "./Contact.module.css";
@@ -11,44 +11,44 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
   const form = useRef();
 
   const ContactUs = {
-    es: 'Contactanos',
-    en: 'Contact us',
-    fr: 'Contactez-nous'
+    es: "Contactanos",
+    en: "Contact us",
+    fr: "Contactez-nous",
   };
 
   const Description = {
-    es: 'Descripción de la propuesta',
-    en: 'Proposal Description',
-    fr: 'Description de la proposition'
+    es: "Descripción de la propuesta",
+    en: "Proposal Description",
+    fr: "Description de la proposition",
   };
 
   const fullName = {
-    es: 'Nombre completo o nombre de la empresa',
-    en: 'Full name or company name',
-    fr: 'Nom complet ou nom de l\'entreprise'
+    es: "Nombre completo o nombre de la empresa",
+    en: "Full name or company name",
+    fr: "Nom complet ou nom de l'entreprise",
   };
 
   const tellUs = {
-    es: 'Cuentanos que necesitas, ¿En que te podemos ayudar?',
-    en: 'Tell us what you need, how can we help you?',
-    fr: 'Dites-nous ce dont vous avez besoin, comment pouvons-nous vous aider ?'
+    es: "Cuentanos que necesitas, ¿En que te podemos ayudar?",
+    en: "Tell us what you need, how can we help you?",
+    fr: "Dites-nous ce dont vous avez besoin, comment pouvons-nous vous aider ?",
   };
 
   const sendMessage = {
-    es: 'Enviar',
-    en: 'Send',
-    fr: 'Envoyer'
+    es: "Enviar",
+    en: "Send",
+    fr: "Envoyer",
   };
 
   const telNumber = {
-    es: 'número de teléfono',
-    en: 'telephone number',
-    fr: 'numéro de téléphone'
+    es: "número de teléfono",
+    en: "telephone number",
+    fr: "numéro de téléphone",
   };
 
   useEffect(() => {
-    document.body.style.margin = '0';
-    document.body.style.padding = '0';
+    document.body.style.margin = "0";
+    document.body.style.padding = "0";
   }, []);
 
   const sendEmail = (e) => {
@@ -71,7 +71,6 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
 
   return (
     <div className={style.background}>
-      <ChangeLanguage onLanguageChange={handleLanguageChange} />
       <div className={style.fixPosition}>
         <div className={style.container}>
           <h2 className={style.title}>{ContactUs[selectedLanguage]}</h2>
@@ -88,6 +87,7 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
               type="email"
               placeholder="email@email.com"
               name="client_email"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               required
             />
             <input
