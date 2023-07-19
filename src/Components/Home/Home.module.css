@@ -10,7 +10,6 @@
 }
 
 .button {
-  margin-left: 10vw;
   margin-top: 25vh;
   border: none;
   height: fit-content;
@@ -57,4 +56,11 @@
   width: 50vw;
   margin-left: 2vw;
   margin-top: -12vw;
+}
+
+.positionB {
+  position: fixed;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
 }

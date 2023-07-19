@@ -1,5 +1,5 @@
 .text {
-  font-size: 1.2vw;
+  font-size: 15px;
   text-align: justify;
   color: whitesmoke;
 }
@@ -9,17 +9,22 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: 15vh;
-  margin-left: 15vw;
-  margin-right: 15vw;
-  
+  margin-top: 20vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  background-color: rgb(44, 43, 43, 0.7);
+  padding: 5%;
+  border-radius: 30px;
 }
 
 .title {
-  font-size: 2vw;
+  text-align: center;
+  font-size: 24px;
   color:whitesmoke
 }
 
 body {
-  background-color: rgb(44, 43, 43);
+  background-image: url(../Img/portatil.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

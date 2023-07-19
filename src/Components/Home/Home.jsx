@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import style from "../../Components/Home/Home.module.css";
 import { AiOutlineWhatsApp, AiOutlineFacebook } from "react-icons/ai";
 import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
@@ -12,8 +12,7 @@ export default function Home({ selectedLanguage, onLanguageChange }) {
   };
   return (
     <div className={style.container}>
-      <ChangeLanguage onLanguageChange={onLanguageChange} />
-      <Link to="/contact">
+      <Link className={style.positionB} to="/contact">
       <button className={style.button}>{textButton[selectedLanguage]}</button>
       </Link>
       <footer className={style.footer}>
