@@ -1,6 +1,5 @@
 import React from "react";
 import style from "./Description.module.css";
-import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
 
 export default function Description({ selectedLanguage, onLanguageChange }) {
   const titles = {
@@ -21,14 +20,17 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         <br />
         ¡No dudes en contactarnos! <br />
         <br />
-        ¿Cómo Trabajamos? <br />
-        <br />
+        <h3 className={style.subtitle}>¿Cómo Trabajamos?</h3>
         Nos enfocamos en entender tus necesidades de la manera más detallada
         posible. Para ello, te invitamos a comunicarte con nosotros por correo
         electrónico (vizalgroup0@gmail.com) y contarnos qué es lo que necesitas.
         Si lo prefieres, también podemos coordinar una videoconferencia para
-        transmitirnos la idea de forma más directa. Para agendar una cita haz
-        click <a href="/contact">aquí</a>! <br />
+        transmitirnos la idea de forma más directa. Para solicitar una cotización de tu proyecto haz
+        click{" "}
+        <a className={style.souligner} href="/contact">
+          aquí
+        </a>
+        ! <br />
         <br />
         Una vez que entendemos tus requerimientos, trabajamos utilizando
         metodologías ágiles. Esto implica tener reuniones periódicas contigo,
@@ -61,14 +63,17 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
 
         <p>Don't hesitate to contact us!</p>
 
-        <p>How Do We Work?</p>
+        <h3 className={style.subtitle}>How Do We Work?</h3>
 
         <p>
           We focus on understanding your needs in the most detailed way
           possible. To do so, we invite you to reach out to us via email
           (vizalgroup0@gmail.com) and tell us what you need. If you prefer, we
-          can also arrange a video conference to directly convey the idea. To
-          schedule an appointment, click <a href="/contact">here</a>!
+          can also arrange a video conference to directly convey the idea. To request a quote for your project, click{" "}
+          <a className={style.souligner} href="/contact">
+            here
+          </a>
+          !
         </p>
 
         <p>
@@ -111,7 +116,7 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
 
         <p>N'hésitez pas à nous contacter !</p>
 
-        <p>Comment travaillons-nous ?</p>
+        <h3 className={style.subtitle}>Comment travaillons-nous ?</h3>
 
         <p>
           Nous nous concentrons sur la compréhension de vos besoins de la
@@ -119,7 +124,11 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
           nous contacter par e-mail (vizalgroup0@gmail.com) et à nous dire ce
           dont vous avez besoin. Si vous préférez, nous pouvons également
           organiser une visioconférence pour transmettre directement l'idée.
-          Pour prendre rendez-vous, cliquez <a href="/contact">ici</a> !
+          Pour demander un devis pour votre projet, cliquez{" "}
+          <a className={style.souligner} href="/contact">
+            ici
+          </a>{" "}
+          !
         </p>
 
         <p>
@@ -149,10 +158,6 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         </p>
       </>
     ),
-  };
-
-  const handleLanguageChange = (language) => {
-    onLanguageChange(language);
   };
 
   return (

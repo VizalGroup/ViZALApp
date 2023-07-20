@@ -14,10 +14,10 @@ export default function ChangeLanguage({ onLanguageChange }) {
   return (
     <div className={style.container}>
       <select className={style.select} value={selectedOption} onChange={handleLanguageChange}>
-        <option disabled value=""></option>
-        <option value="es">Español</option>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
+        <option className={style.option} disabled value=""></option>
+        <option className={style.option} value="es">Español</option>
+        <option className={style.option} value="en">English</option>
+        <option className={style.option} value="fr">Français</option>
       </select>
     </div>
   );
