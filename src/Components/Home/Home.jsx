@@ -1,7 +1,6 @@
 import React from "react";
 import style from "../../Components/Home/Home.module.css";
 import { AiOutlineWhatsApp, AiOutlineFacebook } from "react-icons/ai";
-import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
 import { Link } from "react-router-dom";
 
 export default function Home({ selectedLanguage, onLanguageChange }) {
@@ -15,11 +14,11 @@ export default function Home({ selectedLanguage, onLanguageChange }) {
       <Link className={style.positionB} to="/contact">
       <button className={style.button}>{textButton[selectedLanguage]}</button>
       </Link>
-      <footer className={style.footer}>
-        <AiOutlineWhatsApp className={style.whatsapp} />
-        <AiOutlineFacebook className={style.face} />
+      <div className={style.footer}>
         <h6 className={style.copy}>copy ViZal@2023</h6>
-      </footer>
+        <AiOutlineWhatsApp className={style.socialIcon} />
+        <AiOutlineFacebook className={style.socialIcon} />
+      </div>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import emailConfig from "./config";
 import style from "./Contact.module.css";
-import ChangeLanguage from "../ChangeLanguage/ChangeLanguague";
+
 
 const Contact = ({ selectedLanguage, onLanguageChange }) => {
   const serviceId = emailConfig.REACT_APP_EMAILJS_SERVICE_ID;
@@ -65,9 +65,7 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
     e.target.reset();
   };
 
-  const handleLanguageChange = (language) => {
-    onLanguageChange(language);
-  };
+ 
 
   return (
     <div className={style.background}>
@@ -103,6 +101,7 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
               placeholder={tellUs[selectedLanguage]}
               className={style.project}
               name="message"
+              required
             ></textarea>
             <button className={style.button} type="submit">
               {sendMessage[selectedLanguage]}
