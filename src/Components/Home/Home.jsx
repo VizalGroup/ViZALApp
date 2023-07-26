@@ -41,6 +41,7 @@ export default function Home({ selectedLanguage, onLanguageChange }) {
     en: 'Your satisfaction is our priority.',
     fr: 'Votre satisfaction est notre priorité.'
   }
+
   return (
     <div className={style.container}>
       <div className={style.content}>
@@ -56,7 +57,7 @@ export default function Home({ selectedLanguage, onLanguageChange }) {
       </Link>
       <div className={style.footer}>
         <h6 className={style.copy}>copy ViZal@2023</h6>
-        <AiOutlineWhatsApp className={style.socialIcon} />
+        <Link to='https://www.facebook.com/ViZalGroup'>
         <AiOutlineFacebook className={style.socialIcon} />
         </Link>
         {/* <AiOutlineWhatsApp className={style.socialIcon} /> */}
