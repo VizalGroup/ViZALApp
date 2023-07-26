@@ -23,10 +23,10 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         <h3 className={style.subtitle}>¿Cómo Trabajamos?</h3>
         Nos enfocamos en entender tus necesidades de la manera más detallada
         posible. Para ello, te invitamos a comunicarte con nosotros por correo
-        electrónico (vizalgroup0@gmail.com) y contarnos qué es lo que necesitas.
-        Si lo prefieres, también podemos coordinar una videoconferencia para
-        transmitirnos la idea de forma más directa. Para solicitar una cotización de tu proyecto haz
-        click{" "}
+        electrónico y contarnos qué es lo que necesitas. Si lo prefieres,
+        también podemos coordinar una videoconferencia para transmitirnos la
+        idea de forma más directa. Para solicitar una cotización de tu proyecto
+        haz click{" "}
         <a className={style.souligner} href="/contact">
           aquí
         </a>
@@ -67,9 +67,10 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
 
         <p>
           We focus on understanding your needs in the most detailed way
-          possible. To do so, we invite you to reach out to us via email
-          (vizalgroup0@gmail.com) and tell us what you need. If you prefer, we
-          can also arrange a video conference to directly convey the idea. To request a quote for your project, click{" "}
+          possible. To do so, we invite you to reach out to us via email and
+          tell us what you need. If you prefer, we can also arrange a video
+          conference to directly convey the idea. To request a quote for your
+          project, click{" "}
           <a className={style.souligner} href="/contact">
             here
           </a>
@@ -121,10 +122,10 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         <p>
           Nous nous concentrons sur la compréhension de vos besoins de la
           manière la plus détaillée possible. Pour cela, nous vous invitons à
-          nous contacter par e-mail (vizalgroup0@gmail.com) et à nous dire ce
-          dont vous avez besoin. Si vous préférez, nous pouvons également
-          organiser une visioconférence pour transmettre directement l'idée.
-          Pour demander un devis pour votre projet, cliquez{" "}
+          nous contacter par e-mail et à nous dire ce dont vous avez besoin. Si
+          vous préférez, nous pouvons également organiser une visioconférence
+          pour transmettre directement l'idée. Pour demander un devis pour votre
+          projet, cliquez{" "}
           <a className={style.souligner} href="/contact">
             ici
           </a>{" "}
