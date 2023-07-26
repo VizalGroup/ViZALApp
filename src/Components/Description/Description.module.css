@@ -27,6 +27,7 @@ body {
   background-image: url(../Img/portatil.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; 
 }
 
 .souligner{

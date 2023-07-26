@@ -23,4 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Custom ignores
-/src/Components/Contact/config.js
+.env
