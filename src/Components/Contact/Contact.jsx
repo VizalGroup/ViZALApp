@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import emailConfig from "./config";
 import style from "./Contact.module.css";
@@ -9,6 +9,8 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
   const templateId = emailConfig.REACT_APP_EMAILJS_TEMPLATE_ID;
   const userId = emailConfig.REACT_APP_EMAILJS_USER_ID;
   const form = useRef();
+  const [emailStatus, setEmailStatus] = useState(null);
+
 
   const ContactUs = {
     es: "Contactanos",
@@ -46,6 +48,18 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
     fr: "numéro de téléphone",
   };
 
+  const succesMsg = {
+    es: "Tu mensaje fue enviado exitosamente, Estaremos en contacto contigo lo mas pronto posible.",
+    en: "Your message was sent successfully. We will be in contact with you as soon as possible.",
+    fr: "Votre message a été envoyé avec succès, nous vous contacterons dans les plus brefs délais.",
+  };
+
+  const errorMsg = {
+    es: "¡Ups! Algo salió mal. Por favor, inténtalo de nuevo más tarde.",
+    en: "Oops! Something went wrong. Please try again later.",
+    fr: "Oops! Quelque chose s'est mal passé. Veuillez réessayer plus tard.",
+  }
+
   useEffect(() => {
     document.body.style.margin = "0";
     document.body.style.padding = "0";
@@ -57,14 +71,25 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
     emailjs.sendForm(serviceId, templateId, form.current, userId).then(
       (result) => {
         console.log(result.text);
+        setEmailStatus("success");
       },
       (error) => {
         console.log(error.text);
+        setEmailStatus("error");
       }
     );
     e.target.reset();
   };
 
+  const renderMessage = () => {
+    if (emailStatus === "success") {
+      return <div className={style.successMessage}>{succesMsg[selectedLanguage]}</div>;
+    } else if (emailStatus === "error") {
+      return <div className={style.errorMessage}>{errorMsg[selectedLanguage]}</div>;
+    } else {
+      return null;
+    }
+  };
  
 
   return (
@@ -72,6 +97,7 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
       <div className={style.fixPosition}>
         <div className={style.container}>
           <h2 className={style.title}>{ContactUs[selectedLanguage]}</h2>
+          {renderMessage()}
           <form className={style.direction} ref={form} onSubmit={sendEmail}>
             <input
               className={style.input}
