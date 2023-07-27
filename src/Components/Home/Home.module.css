@@ -90,3 +90,6 @@
   padding: 10px;
 }
 
+.items{
+list-style: none;
+}
