@@ -14,7 +14,7 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         ViZal Group es un grupo de profesionales autónomos que cree en la
         sinergia como medio para lograr resultados de calidad para nuestros
         clientes, nos enfocamos en brindarte soluciones para tus necesidades del
-        tipo emprendedoras, Contamos con un equipo de gestión de proyectos,
+        tipo emprendedoras. Contamos con un equipo de gestión de proyectos,
         desarrollo de software, diseño gráfico, experiencia de usuario (UX) y
         traducciones. <br />
         <br />

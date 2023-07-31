@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import emailConfig from "./config";
 import style from "./Contact.module.css";
+import { Link } from "react-router-dom";
 
 
 const Contact = ({ selectedLanguage, onLanguageChange }) => {
@@ -31,7 +32,7 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
   };
 
   const tellUs = {
-    es: "Cuentanos que necesitas, ¿En que te podemos ayudar?",
+    es: "Cuéntanos, ¿en qué te podemos ayudar?",
     en: "Tell us what you need, how can we help you?",
     fr: "Dites-nous ce dont vous avez besoin, comment pouvons-nous vous aider ?",
   };
@@ -96,6 +97,9 @@ const Contact = ({ selectedLanguage, onLanguageChange }) => {
     <div className={style.background}>
       <div className={style.fixPosition}>
         <div className={style.container}>
+          <Link className={style.x} to='/'>
+          X
+          </Link>
           <h2 className={style.title}>{ContactUs[selectedLanguage]}</h2>
           {renderMessage()}
           <form className={style.direction} ref={form} onSubmit={sendEmail}>
