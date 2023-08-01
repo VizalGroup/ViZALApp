@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./Description.module.css";
+import { Link } from "react-router-dom";
 
 export default function Description({ selectedLanguage, onLanguageChange }) {
   const titles = {
@@ -27,9 +28,9 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         también podemos coordinar una videoconferencia para transmitirnos la
         idea de forma más directa. Para solicitar una cotización de tu proyecto
         haz click{" "}
-        <a className={style.souligner} href="/contact">
+        <Link to='/contact' className={style.souligner} href="/contact">
           aquí
-        </a>
+        </Link>
         ! <br />
         <br />
         Una vez que entendemos tus requerimientos, trabajamos utilizando
