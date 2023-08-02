@@ -29,9 +29,9 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
         idea de forma más directa. Para solicitar una cotización de tu proyecto
         haz click{" "}
         <Link to='/contact' className={style.souligner} href="/contact">
-          aquí
+          aquí!
         </Link>
-        ! <br />
+        <br />
         <br />
         Una vez que entendemos tus requerimientos, trabajamos utilizando
         metodologías ágiles. Esto implica tener reuniones periódicas contigo,
@@ -72,10 +72,9 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
           tell us what you need. If you prefer, we can also arrange a video
           conference to directly convey the idea. To request a quote for your
           project, click{" "}
-          <a className={style.souligner} href="/contact">
-            here
-          </a>
-          !
+          <Link to='/contact' className={style.souligner} href="/contact">
+          here!
+        </Link>
         </p>
 
         <p>
@@ -127,10 +126,9 @@ export default function Description({ selectedLanguage, onLanguageChange }) {
           vous préférez, nous pouvons également organiser une visioconférence
           pour transmettre directement l'idée. Pour demander un devis pour votre
           projet, cliquez{" "}
-          <a className={style.souligner} href="/contact">
-            ici
-          </a>{" "}
-          !
+          <Link to='/contact' className={style.souligner} href="/contact">
+          ici!
+        </Link>
         </p>
 
         <p>
