@@ -21,6 +21,7 @@ function App() {
         <Route path="/" element={<Home selectedLanguage={selectedLanguage} onLanguageChange={handleLanguageChange}/>} />
         <Route stric path="/contact" element={<Contact selectedLanguage={selectedLanguage} onLanguageChange={handleLanguageChange} />} />
         <Route stric path="/descripcion" element={<Description selectedLanguage={selectedLanguage} onLanguageChange={handleLanguageChange}/>}/>
+        
       </Routes>
     </div>
   );

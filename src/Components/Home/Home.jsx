@@ -2,6 +2,7 @@ import React from "react";
 import style from "../../Components/Home/Home.module.css";
 import { AiOutlineFacebook, AiOutlineMail } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import ServicesList from "../ServicesList/ServicesList";
 
 export default function Home({ selectedLanguage, onLanguageChange }) {
   const textButton = {
@@ -55,13 +56,14 @@ export default function Home({ selectedLanguage, onLanguageChange }) {
       <Link className={style.positionB} to="/contact">
       <button className={style.button}>{textButton[selectedLanguage]}</button>
       </Link>
+      </div>
+      <ServicesList/>
       <div className={style.footer}>
         <h6 className={style.copy}>copy ViZal@2023</h6>
         <AiOutlineMail className={style.socialIcon} onClick={handleEmailClick} />
         <Link to='https://www.facebook.com/ViZalGroup'>
         <AiOutlineFacebook className={style.socialIcon} />
         </Link>
-      </div>
       </div>
     </div>
   );
