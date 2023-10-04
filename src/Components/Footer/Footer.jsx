@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AiOutlineFacebook,
+  AiOutlineInstagram,
   AiOutlineMail,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
@@ -30,6 +31,13 @@ export default function footer({ selectedLanguage, onLanguageChange }) {
       <Link to="https://www.facebook.com/ViZalGroup">
         <AiOutlineFacebook className={style.socialIcon} />
       </Link>
+      <a
+        href="https://www.instagram.com/vizal_group/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AiOutlineInstagram className={style.socialIcon} /> {/* Agregamos el ícono de Instagram con el enlace */}
+      </a>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import Nav from "./Components/Nav/Nav";
 import Description from "./Components/Description/Description";
 import ServicesList from "./Components/ServicesList/ServicesList";
 import Footer from "./Components/Footer/Footer";
+import ProfessionalPage from "./Components/ProfessionalPage/ProfessionalPage";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("es");
@@ -60,6 +61,16 @@ function App() {
             />
           }
         />
+        {/* <Route
+          stric
+          path="/professionalPage"
+          element={
+            <ProfessionalPage
+              selectedLanguage={selectedLanguage}
+              onLanguageChange={handleLanguageChange}
+            />
+          }
+        /> */}
       </Routes>
     </div>
   );

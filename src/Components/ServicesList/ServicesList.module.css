@@ -19,6 +19,7 @@
     transform: scale(1.1);
   }
   
-.link-wrapper {
+.link{
   text-decoration: none;
+  color: black;
 }

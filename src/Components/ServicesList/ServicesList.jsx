@@ -10,6 +10,7 @@ import imgWorkPortafolio from "../Img/workPortafolio.avif";
 import imgSeo from "../Img/seo.jpg";
 import imgInstitute from "../Img/institute.jpg";
 import imgPyme from "../Img/pyme.jpg";
+import { Link } from "react-router-dom";
 
 export default function ServicesList({ selectedLanguage, onLanguageChange }) {
   const graphicDesign = {
@@ -104,12 +105,14 @@ export default function ServicesList({ selectedLanguage, onLanguageChange }) {
 
   return (
     <div className={style.container}>
-      <Card className={style.card} to="/contact">
+      <Card className={style.card}>
+      {/* <Link to="https://www.behance.net/tamarazaslavsky" className={style.link}> */}
         <Card.Img variant="top" src={imgDesign} />
         <Card.Body>
           <Card.Title>{graphicDesign[selectedLanguage]}</Card.Title>
           <Card.Text>{graphicDesignText[selectedLanguage]}</Card.Text>
         </Card.Body>
+      {/* </Link> */}
       </Card>
       <Card className={style.card}>
         <Card.Img variant="top" src={imgCorporative} />
@@ -126,11 +129,13 @@ export default function ServicesList({ selectedLanguage, onLanguageChange }) {
         </Card.Body>
       </Card>
       <Card className={style.card}>
+      {/* <Link to="/professionalPage" className={style.link}> */}
         <Card.Img variant="top" src={imgProfessionalContact} />
         <Card.Body>
           <Card.Title>{professionalContactPage[selectedLanguage]}</Card.Title>
           <Card.Text>{professionalContactPageText[selectedLanguage]}</Card.Text>
         </Card.Body>
+      {/* </Link> */}
       </Card>
       <Card className={style.card}>
         <Card.Img variant="top" src={imgPyme} />
