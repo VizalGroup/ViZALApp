@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import style from "./ChangeLanguague.module.css";
 
 export default function ChangeLanguage({ onLanguageChange }) {
-  // const [selectedOption] = useState("");
   const [selectedOption] = useState("");
 
   const handleLanguageChange = (event) => {
